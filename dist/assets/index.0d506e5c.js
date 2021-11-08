@@ -1,0 +1,24 @@
+import{R as e,a as c}from"./vendor.cd7509fb.js";const s=function(){const l=document.createElement("link").relList;if(l&&l.supports&&l.supports("modulepreload"))return;for(const t of document.querySelectorAll('link[rel="modulepreload"]'))i(t);new MutationObserver(t=>{for(const a of t)if(a.type==="childList")for(const n of a.addedNodes)n.tagName==="LINK"&&n.rel==="modulepreload"&&i(n)}).observe(document,{childList:!0,subtree:!0});function m(t){const a={};return t.integrity&&(a.integrity=t.integrity),t.referrerpolicy&&(a.referrerPolicy=t.referrerpolicy),t.crossorigin==="use-credentials"?a.credentials="include":t.crossorigin==="anonymous"?a.credentials="omit":a.credentials="same-origin",a}function i(t){if(t.ep)return;t.ep=!0;const a=m(t);fetch(t.href,a)}};s();const o={height:"h-32",width:"w-32"};function g({cardData:r}){return e.createElement("div",{key:r.city,className:"flex items-center rounded-lg bg-white shadow-lg overflow-hidden"},e.createElement("img",{className:`${o.height} ${o.width} flex-shrink-0`,src:r.imageUrl,alt:r.imageAlt}),e.createElement("div",{className:"px-6 py-4"},e.createElement("h3",{className:"text-lg font-semibold text-gray-800"},r.city),e.createElement("p",{className:"text-gray-600"},r.averagePrice,"/noght average"),e.createElement("div",{className:"mt-4"},e.createElement("a",{href:"#",className:"text-brand hover:text-brand-light font-semibold text-sm"},"Explore ",r.propertyCount," properties"))))}function d(){return e.createElement("div",{className:"bg-yellow-400 h-screen flex flex-col justify-center items-center"},e.createElement("h1",{className:"p-6 text-white text-4xl bg-gray-800 font-medium"},"START \u2193"),e.createElement("div",{className:"p-6 text-yellow-200 text-sm italic font-light "},"\u95B1\u8B80\u6642\u5EFA\u8B70\u4F7F\u7528\u96FB\u8166\u7248"))}function u(){return e.createElement("div",{className:"py-5 bg-gray-400 text-center text-sm text-white"},"Design By Rumor")}var p=[{city:"Toronto",averagePrice:120,propertyCount:76,imageUrl:"/img/toronto.jpg",imageAlt:"Toronto skyline"},{city:"Malibu",averagePrice:215,propertyCount:43,imageUrl:"/img/malibu.jpg",imageAlt:"Cliff in Malibu"},{city:"Chicago",averagePrice:130,propertyCount:115,imageUrl:"/img/chicago.jpg",imageAlt:"Chicago skyline"},{city:"Seattle",averagePrice:135,propertyCount:63,imageUrl:"/img/seattle.jpg",imageAlt:"Seattle skyline"},{city:"Colorado",averagePrice:85,propertyCount:47,imageUrl:"/img/colorado.jpg",imageAlt:"Lake in Colorado"},{city:"Miami",averagePrice:115,propertyCount:86,imageUrl:"/img/miami.jpg",imageAlt:"Beach in Miami"}];function y(){return e.createElement("div",null,e.createElement(d,null),e.createElement("div",{className:"bg-gray-100 grid lg:grid-cols-2 2xl:grid-cols-5"},e.createElement("div",{className:`
+          p-8
+          py-12
+          max-w-md
+          mx-auto
+          sm:max-w-xl
+          lg:px-12 lg:py-24 lg:max-w-full
+          xl:mr-0
+          2xl:col-span-2
+        `},e.createElement("div",{className:"xl:max-w-xl"},e.createElement("img",{className:"h-10",src:"/img/logo.svg",alt:"Workcation"}),e.createElement("img",{className:`
+              mt-6
+              rounded-lg
+              shadow-xl
+              sm:mt-8 sm:h-64 sm:w-full sm:object-cover
+              object-center
+              lg:hidden
+            `,src:"img/101.jpg",alt:"taipei 101"}),e.createElement("h1",{className:`
+              mt-6
+              text-2xl
+              font-bold
+              text-gray-900
+              sm:mt-8 sm:text-4xl
+              lg:text-3xl
+            `},"You can work from anywhere.",e.createElement("br",{className:"hidden lg:inline"}),e.createElement("span",{className:"text-brand"},"Take advantage of it ")),e.createElement("p",{className:"mt-2 text-gray-600 sm:mt-4 sm:text-xl"},"Workcation helps you find work-friendly in beautiful locations so you can enjoy some nice weather even when you're not on vacation."),e.createElement("div",{className:"mt-4 space-x-1 sm:mt-6"},e.createElement("a",{className:"btn btn-primary shadow-lg transform transition hover:-translate-y-0.5",href:"#"},"Book your escape"),e.createElement("a",{className:"btn btn-secondary",href:"#"},"Learn more")))),e.createElement("div",{className:"hidden relative lg:block 2xl:col-span-3"},e.createElement("img",{className:"absolute inset-0 w-full h-full object-cover object-center",src:"/img/beach-work.jpg",alt:"beach"}))),e.createElement("div",{className:"max-w-md sm:max-w-xl lg:max-w-6xl mx-auto px-8 lg:px-12 py-8"},e.createElement("h2",{className:"text-xl text-gray-900"},"Popular cardDatas"),e.createElement("p",{className:"mt-2 text-gray-600"},"A selection of great work-friendly cities with lots to see and explore."),e.createElement("div",{className:"mt-6 grid gap-6 lg:grid-cols-2 xl:grid-cols-3"},p.map(r=>e.createElement(g,{cardData:r,key:r.city})))),e.createElement(u,null))}c.render(e.createElement(y,null),document.getElementById("root"));
